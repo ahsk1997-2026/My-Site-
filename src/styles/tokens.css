@@ -1,0 +1,85 @@
+/* ==========================================================================
+   آرمان پخش — Design tokens
+   Palette, typography scale, radii, spacing and elevation for the whole UI.
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/Vazirmatn.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Brand palette ------------------------------------------------------- */
+  --c-navy: #101b26;
+  --c-navy-900: #0b141d;
+  --c-navy-800: #16232f;
+  --c-navy-700: #1f3140;
+  --c-white: #ffffff;
+  --c-ivory: #f5f1eb;
+  --c-ivory-deep: #ece5db;
+  --c-gold: #c49a62;
+  --c-gold-deep: #a9804c;
+  --c-gold-soft: #e6d3b7;
+  --c-gray: #e8eaed;
+  --c-gray-deep: #d6dae0;
+
+  --c-ink: #101b26;
+  --c-body: #46525e;
+  --c-muted: #77828d;
+  --c-on-dark: #f2f4f6;
+  --c-on-dark-muted: #a9b6c2;
+
+  --c-success: #2f7a54;
+  --c-danger: #a4362f;
+
+  --line: rgba(16, 27, 38, 0.1);
+  --line-strong: rgba(16, 27, 38, 0.18);
+  --line-dark: rgba(255, 255, 255, 0.14);
+
+  /* Typography ---------------------------------------------------------- */
+  --font-sans: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+
+  --fs-display: clamp(2rem, 1.35rem + 2.4vw, 3.4rem);
+  --fs-h1: clamp(1.7rem, 1.25rem + 1.7vw, 2.5rem);
+  --fs-h2: clamp(1.45rem, 1.15rem + 1.1vw, 2rem);
+  --fs-h3: clamp(1.1rem, 1rem + 0.45vw, 1.3rem);
+  --fs-lead: clamp(1rem, 0.95rem + 0.25vw, 1.1rem);
+  --fs-body: 0.9375rem;
+  --fs-sm: 0.8125rem;
+  --fs-xs: 0.75rem;
+  --fs-2xs: 0.6875rem;
+
+  --lh-heading: 1.5;
+  --lh-body: 1.9;
+
+  /* Spacing ------------------------------------------------------------- */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-7: 32px;
+  --sp-8: 40px;
+  --sp-9: 56px;
+  --sp-10: 72px;
+  --sp-11: 96px;
+
+  /* Shape + elevation --------------------------------------------------- */
+  --r-xs: 2px;
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 10px;
+
+  --shadow-xs: 0 1px 2px rgba(16, 27, 38, 0.06);
+  --shadow-sm: 0 4px 14px -8px rgba(16, 27, 38, 0.22);
+  --shadow-md: 0 18px 40px -24px rgba(16, 27, 38, 0.32);
+  --shadow-lg: 0 30px 70px -40px rgba(16, 27, 38, 0.45);
+
+  --header-h: 76px;
+  --topbar-h: 38px;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}

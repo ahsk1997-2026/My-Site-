@@ -1,0 +1,88 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  line-height: 1;
+}
+
+.logo__emblem {
+  display: block;
+  width: 44px;
+  height: 44px;
+  flex: none;
+}
+
+.logo__emblem svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Emblem on light surfaces: navy frame, gold mark */
+.logo__frame {
+  fill: var(--c-navy);
+  stroke: var(--c-gold);
+  stroke-width: 1;
+}
+
+.logo__mark {
+  fill: var(--c-white);
+}
+
+.logo__notch {
+  fill: var(--c-gold);
+}
+
+.logo__base {
+  stroke: var(--c-gold);
+  stroke-width: 1;
+  stroke-linecap: round;
+}
+
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.logo__name {
+  font-size: 1.28rem;
+  font-weight: 800;
+  color: var(--c-navy);
+  letter-spacing: -0.2px;
+}
+
+.logo__latin {
+  font-size: 0.56rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  color: var(--c-muted);
+  text-transform: uppercase;
+}
+
+/* On dark surfaces */
+.logo--dark .logo__frame {
+  fill: transparent;
+  stroke: rgba(196, 154, 98, 0.55);
+}
+
+.logo--dark .logo__mark {
+  fill: var(--c-white);
+}
+
+.logo--dark .logo__name {
+  color: var(--c-white);
+}
+
+.logo--dark .logo__latin {
+  color: var(--c-on-dark-muted);
+}
+
+.logo--compact .logo__emblem {
+  width: 38px;
+  height: 38px;
+}
+
+.logo--compact .logo__name {
+  font-size: 1.16rem;
+}
